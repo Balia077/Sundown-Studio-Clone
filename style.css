@@ -8,3 +8,9 @@ html, body{
     height: 100%;
     width: 100%;
 }
+
+#page1{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(47, 168, 208);
+}

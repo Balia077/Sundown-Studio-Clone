@@ -3,6 +3,18 @@
     src: url(./neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayMediu.ttf);
 }
 
+@font-face {
+    font-family: neu;
+    font-weight: 100;
+    src: url(./neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayLight.ttf);
+}
+
+@font-face {
+    font-family: neu;
+    font-weight: 200;
+    src: url(./neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayRoman.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -182,6 +194,7 @@ nav{
     width: 100%;
     background-color: #EFEAE3;
     padding: 7vw 0;
+    position: relative;
 }
 
 #moving-text{
@@ -224,4 +237,69 @@ nav{
     to{
         transform: translateX(-100%);
     }
+}
+
+#page2-bottom{
+    height: 100vh;
+    width: 100%;
+   /*  background-color: aliceblue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5.6vw;
+    position: relative;
+    z-index: 9;
+}
+
+#page2-bottom h1{
+    font-size: 4vw;
+    width: 60%;
+    line-height: 3.8vw;
+}
+
+#bottom-part2{
+    width: 20%;
+    /* background-color: crimson; */
+}
+
+#bottom-part2 img{
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 15vw;
+}
+
+#bottom-part2 p{
+    font-weight: 200;
+    margin-top: 3vw;
+}
+
+#page2 #suiii{
+    height: 35vw;
+    width: 35vw;
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(to top right,#FE370D, #ff6f00);
+    top: 55%;
+    left: 25%;
+    filter: blur(25px);
+    animation-name: suiii;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes suiii{
+    from{
+        transform: translate(10%, -10%);
+    }
+    to{
+        transform: translate(-10%, 10%);
+    }
+}
+
+#page3{
+    height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
 }

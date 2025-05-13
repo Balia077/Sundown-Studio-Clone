@@ -283,18 +283,20 @@ nav{
     left: 25%;
     filter: blur(25px);
     animation-name: suiii;
-    animation-duration: 4s;
-    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 
 @keyframes suiii{
     from{
-        transform: translate(10%, -10%);
+        filter: blur(25px);
+        transform: translate(10%, -10%) skew(0);
     }
     to{
-        transform: translate(-10%, 10%);
+        filter: blur(35px);
+        transform: translate(-10%, 10%) skew(-10deg);
     }
 }
 

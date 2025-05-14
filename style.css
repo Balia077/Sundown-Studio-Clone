@@ -301,7 +301,51 @@ nav{
 }
 
 #page3{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-color: #EFEAE3;
+}
+
+.elem{
+    height: 125px;
+    width: 100%;
+    border-bottom: 1px solid rgba(191, 169, 169, 0.468);
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    padding: 0 2vw;
+}
+
+.elem h2{
+    font-size: 3vw;
+    position: relative;
+    z-index: 9;
+}
+
+.elem .overlay{
+    height: 100%;
+    width: 100%;
+    background-color: #FF9831;
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: all ease 0.3s;
+}
+
+.elem:hover .overlay{
+    top: 0;
+}
+
+#elem-container{
+   /*  background-color: #000000; */
+}
+
+#fixed-img{
+    height: 30vw;
+    width: 22w;
+    background-color: red;
+    border-radius: 10px;
+    position: fixed;
+    z-index: 99;
 }
